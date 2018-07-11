@@ -1,0 +1,37 @@
+{
+    "name": "karmia-utility-sequence",
+    "version": "0.1.0",
+    "description": "Karmia sequence utility module.",
+    "homepage": "https://github.com/fujimakishouten/karmia-utility-string",
+    "license": "MIT",
+    "author": "Kazuma Fujimaki <fujimaki-k@fujimakishouten.com>",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fujimakishouten/karmia-utility-string.git"
+    },
+    "scripts": {
+        "build": "tsc --lib es6 ./index.ts",
+        "build:dev": "tsc",
+        "cobertura": "npm run build:dev && istanbul cover --report cobertura _mocha ./test",
+        "coverage": "npm run build:dev && istanbul cover --report html _mocha ./test",
+        "postinstall": "npm run build",
+        "test": "npm run build:dev && _mocha ./test"
+    },
+    "dependencies": {
+        "typescript": "^2.9.2"
+    },
+    "devDependencies": {
+        "@types/expect.js": "^0.3.29",
+        "@types/node": "^10.5.2",
+        "@types/mocha": "^5.2.4",
+        "expect.js": "^0.3.1",
+        "istanbul": "^1.1.0-alpha.1",
+        "mocha": "^5.2.0",
+        "tslint": "^5.10.0",
+        "tslint-eslint-rules": "^5.3.1"
+    },
+    "engines": {
+        "node": ">=8.0.0"
+    }
+}
