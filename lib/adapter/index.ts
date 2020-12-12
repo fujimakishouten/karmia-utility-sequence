@@ -9,7 +9,7 @@
 abstract class KarmiaUtilitySequenceAdapter {
     public sequence?: any;
     abstract init(value: any): KarmiaUtilitySequenceAdapter;
-    abstract async get(): Promise<any>;
+    abstract get(): Promise<any>;
 }
 
 

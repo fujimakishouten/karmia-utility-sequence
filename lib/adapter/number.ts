@@ -10,7 +10,7 @@ import KarmiaUtilitySequenceAdapter from "./";
 
 
 class KarmiaUtilitySequenceAdapterNumber extends KarmiaUtilitySequenceAdapter {
-    public sequence: number = 0;
+    public sequence = 0;
 
     /**
      * Constructor
@@ -18,7 +18,7 @@ class KarmiaUtilitySequenceAdapterNumber extends KarmiaUtilitySequenceAdapter {
      * @constructs KarmiaUtilitySequenceAdapterNumber
      * @param {number} [initial_value=0]
      */
-    constructor(initial_value: number=0) {
+    constructor(initial_value=0) {
         super();
 
         this.init(initial_value);
